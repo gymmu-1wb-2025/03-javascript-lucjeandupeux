@@ -1,8 +1,9 @@
 const number = Number(process.argv[2]);
-const remainder = number % 3;
+const divisor = Number(process.argv[3]);
+const remainder = number % divisor;
 
 if (remainder === 0) {
-	console.log(`Die Zahl ist durch 3 teilbar.`);
+	console.log(`Die Zahl ${number} ist durch ${divisor} teilbar.`);
 } else {
-	console.log(`Die Zahl ist nicht durch 3 teilbar.`);
+	console.log(`Die Zahl ${number} ist nicht durch ${divisor} teilbar.`);
 }
